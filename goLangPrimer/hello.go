@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"log"
-
 	"goLang/greetings"
+	"log"
 
 	"rsc.io/quote"
 )

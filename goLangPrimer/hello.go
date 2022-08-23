@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"goLang/greetings"
 	"log"
+
+	"goLang/greetings"
 
 	"rsc.io/quote"
 )
@@ -19,9 +20,18 @@ func main() {
 	// 	log.Fatal(err)
 	// }
 	// fmt.Println(message)
-	message1, err := greetings.Hello("Dipsy")
+	// message1, err := greetings.Hello("Dipsy")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// fmt.Println(message1)
+
+	names := []string{"Dipsy", "Litchi", "Richie"}
+	messages, err := greetings.Hellos(names)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(message1)
+	for _, message := range messages {
+		fmt.Println(message)
+	}
 }
